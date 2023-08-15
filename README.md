@@ -1,1 +1,1 @@
-# WCCCriket
+# WCCCricket
