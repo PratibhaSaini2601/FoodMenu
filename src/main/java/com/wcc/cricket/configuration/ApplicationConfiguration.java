@@ -1,6 +1,6 @@
 package com.wcc.cricket.configuration;
 
-import com.wcc.cricket.repository.UserRepository;
+import com.wcc.cricket.dao.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

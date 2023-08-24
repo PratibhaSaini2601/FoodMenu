@@ -1,6 +1,6 @@
 package com.wcc.cricket.request;
 
-import com.wcc.cricket.user.Role;
+import com.wcc.cricket.dao.models.Role;
 import lombok.Data;
 
 @Data

@@ -1,6 +1,6 @@
-package com.wcc.cricket.repository;
+package com.wcc.cricket.dao.repository;
 
-import com.wcc.cricket.user.User;
+import com.wcc.cricket.dao.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

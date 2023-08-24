@@ -1,4 +1,4 @@
-package com.wcc.cricket;
+package com.wcc.cricket.dao.models;
 
 import jakarta.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;

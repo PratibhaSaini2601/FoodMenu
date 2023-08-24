@@ -1,4 +1,4 @@
-package com.wcc.cricket.user;
+package com.wcc.cricket.dao.models;
 
 import jakarta.persistence.*;
 import lombok.*;
