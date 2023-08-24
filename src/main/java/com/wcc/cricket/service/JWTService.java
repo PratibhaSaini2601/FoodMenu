@@ -35,7 +35,7 @@ public class JWTService {
                 .setClaims(extraClaims)
                 .setSubject(userDetails.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 30))
+                .setExpiration(new Date(System.currentTimeMillis() + 10000 * 60 * 3))
                 .signWith(getSigningKey(), SignatureAlgorithm.HS256)
                 .compact();
     }
@@ -46,7 +46,7 @@ public class JWTService {
     }
 
     private boolean isTokenExpired(String jwtToken) {
-        return !extractExpiration(jwtToken).before(new Date());
+        return extractExpiration(jwtToken).before(new Date());
     }
 
     private Date extractExpiration(String jwtToken) {
@@ -62,7 +62,7 @@ public class JWTService {
         return Jwts.parserBuilder()
                 .setSigningKey(getSigningKey())
                 .build()
-                .parseClaimsJwt(jwtToken)
+                .parseClaimsJws(jwtToken)
                 .getBody();
     }
 
