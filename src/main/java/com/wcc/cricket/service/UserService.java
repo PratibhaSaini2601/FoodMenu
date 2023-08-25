@@ -1,12 +1,14 @@
 package com.wcc.cricket.service;
 
-import com.wcc.cricket.dao.models.User;
+import com.wcc.cricket.response.UserResponse;
 
 import java.util.List;
 
 public interface UserService {
 
-    User getUserByID(int userID);
+    UserResponse getUserByID(int userID);
 
-    List<User> getAllUsers();
+    List<UserResponse> getAllUsers();
+
+    UserResponse deleteUserById(int userID);
 }
