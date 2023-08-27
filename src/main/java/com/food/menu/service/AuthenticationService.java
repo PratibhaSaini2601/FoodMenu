@@ -1,10 +1,10 @@
-package com.wcc.cricket.service;
+package com.food.menu.service;
 
-import com.wcc.cricket.request.AuthenticationRequest;
-import com.wcc.cricket.request.RegisterRequest;
-import com.wcc.cricket.response.AuthenticationResponse;
-import com.wcc.cricket.dao.models.User;
-import com.wcc.cricket.dao.repository.UserRepository;
+import com.food.menu.dao.repository.UserRepository;
+import com.food.menu.request.AuthenticationRequest;
+import com.food.menu.request.RegisterRequest;
+import com.food.menu.response.AuthenticationResponse;
+import com.food.menu.dao.models.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

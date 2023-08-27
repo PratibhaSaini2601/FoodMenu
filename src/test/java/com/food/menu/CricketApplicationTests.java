@@ -1,4 +1,4 @@
-package com.wcc.cricket;
+package com.food.menu;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,9 +1,8 @@
-package com.wcc.cricket.controller;
+package com.food.menu.controller;
 
-import com.wcc.cricket.request.AuthenticationRequest;
-import com.wcc.cricket.request.RegisterRequest;
-import com.wcc.cricket.response.AuthenticationResponse;
-import com.wcc.cricket.service.AuthenticationService;
+import com.food.menu.request.AuthenticationRequest;
+import com.food.menu.response.AuthenticationResponse;
+import com.food.menu.service.AuthenticationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

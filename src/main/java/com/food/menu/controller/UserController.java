@@ -1,12 +1,12 @@
-package com.wcc.cricket.controller;
+package com.food.menu.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.wcc.cricket.dao.models.User;
-import com.wcc.cricket.request.RegisterRequest;
-import com.wcc.cricket.response.AuthenticationResponse;
-import com.wcc.cricket.response.UserResponse;
-import com.wcc.cricket.service.AuthenticationService;
-import com.wcc.cricket.service.UserService;
+import com.food.menu.request.RegisterRequest;
+import com.food.menu.response.AuthenticationResponse;
+import com.food.menu.response.UserResponse;
+import com.food.menu.dao.models.User;
+import com.food.menu.service.AuthenticationService;
+import com.food.menu.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

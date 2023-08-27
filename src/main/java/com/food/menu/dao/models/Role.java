@@ -1,4 +1,4 @@
-package com.wcc.cricket.dao.models;
+package com.food.menu.dao.models;
 
 public enum Role {
     ADMIN("ADMIN"),

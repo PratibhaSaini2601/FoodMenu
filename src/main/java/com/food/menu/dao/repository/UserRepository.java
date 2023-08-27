@@ -1,6 +1,6 @@
-package com.wcc.cricket.dao.repository;
+package com.food.menu.dao.repository;
 
-import com.wcc.cricket.dao.models.User;
+import com.food.menu.dao.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

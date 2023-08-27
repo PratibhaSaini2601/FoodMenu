@@ -1,6 +1,6 @@
-package com.wcc.cricket.configuration;
+package com.food.menu.configuration;
 
-import com.wcc.cricket.service.JWTService;
+import com.food.menu.service.JWTService;
 import jakarta.annotation.Nonnull;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

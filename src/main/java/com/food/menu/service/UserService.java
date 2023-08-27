@@ -1,7 +1,7 @@
-package com.wcc.cricket.service;
+package com.food.menu.service;
 
-import com.wcc.cricket.dao.models.User;
-import com.wcc.cricket.response.UserResponse;
+import com.food.menu.response.UserResponse;
+import com.food.menu.dao.models.User;
 
 import java.util.List;
 
