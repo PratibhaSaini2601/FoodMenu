@@ -1,6 +1,6 @@
-package com.wcc.cricket.request;
+package com.food.menu.request;
 
-import com.wcc.cricket.dao.models.Role;
+import com.food.menu.dao.models.Role;
 import lombok.Data;
 
 @Data

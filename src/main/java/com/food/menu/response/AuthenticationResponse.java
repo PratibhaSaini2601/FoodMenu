@@ -1,4 +1,4 @@
-package com.wcc.cricket.response;
+package com.food.menu.response;
 
 import lombok.Builder;
 import lombok.Data;

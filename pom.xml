@@ -8,11 +8,11 @@
     <version>3.1.2</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
-  <groupId>com.wcc</groupId>
-  <artifactId>WCCCricket</artifactId>
+  <groupId>com.food</groupId>
+  <artifactId>FoodMenu</artifactId>
   <version>0.0.1</version>
-  <name>cricket</name>
-  <description>WCC Cricket</description>
+  <name>menu</name>
+  <description>Food Menu</description>
   <properties>
     <java.version>17</java.version>
   </properties>

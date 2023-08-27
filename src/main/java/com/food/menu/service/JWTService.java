@@ -1,4 +1,4 @@
-package com.wcc.cricket.service;
+package com.food.menu.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

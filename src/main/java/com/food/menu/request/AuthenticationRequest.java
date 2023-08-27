@@ -1,4 +1,4 @@
-package com.wcc.cricket.request;
+package com.food.menu.request;
 
 import lombok.Data;
 

@@ -1,9 +1,7 @@
-package com.wcc.cricket.response;
+package com.food.menu.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.wcc.cricket.dao.models.Role;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import com.food.menu.dao.models.Role;
 import lombok.Setter;
 
 @Setter

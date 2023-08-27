@@ -1,9 +1,9 @@
-package com.wcc.cricket.service;
+package com.food.menu.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.wcc.cricket.dao.models.User;
-import com.wcc.cricket.dao.repository.UserRepository;
-import com.wcc.cricket.response.UserResponse;
+import com.food.menu.dao.repository.UserRepository;
+import com.food.menu.response.UserResponse;
+import com.food.menu.dao.models.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
