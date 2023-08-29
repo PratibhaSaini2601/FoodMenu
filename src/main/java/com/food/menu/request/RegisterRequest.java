@@ -2,12 +2,16 @@ package com.food.menu.request;
 
 import com.food.menu.dao.models.Role;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Setter
+@Getter
 public class RegisterRequest {
-    public String firstName;
-    public String lastName;
-    public String email;
-    public String password;
-    public Role role;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
+    private Role role;
+    private boolean isDisabled;
 }

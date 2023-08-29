@@ -30,6 +30,8 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     public Role role;
+    @Column(columnDefinition = "boolean DEFAULT false")
+    private boolean isDisabled;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
