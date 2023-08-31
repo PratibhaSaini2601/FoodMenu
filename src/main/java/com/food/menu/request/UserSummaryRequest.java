@@ -11,5 +11,5 @@ public class UserSummaryRequest {
     private String email;
     private String password;
     private Role role;
-    private boolean isDisabled;
+    private Boolean isDisabled;
 }

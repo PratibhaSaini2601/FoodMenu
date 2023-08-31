@@ -31,7 +31,7 @@ public class User implements UserDetails {
     @Column(nullable = false)
     public Role role;
     @Column(columnDefinition = "boolean DEFAULT false")
-    private boolean isDisabled;
+    private Boolean isDisabled;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

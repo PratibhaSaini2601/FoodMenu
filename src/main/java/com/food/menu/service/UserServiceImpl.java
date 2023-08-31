@@ -64,17 +64,19 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserResponse> getUsersSummary(UserSummaryRequest userSummaryRequest) {
         Session session = sessionFactory.openSession();
-        String hql = "FROM User WHERE";
+        String hql = "FROM User";
         if(userSummaryRequest.getId() != null)
-            hql = hql + " id=:id";
+            hql = hql + " WHERE id=:id";
         if(userSummaryRequest.getEmail() != null)
-            hql = hql + " email=:email";
+            hql = hql.contains("WHERE") ? hql + " AND email=:email" : hql + " WHERE email=:email";
         if(userSummaryRequest.getFirstName() != null)
-            hql = hql + " firstName=:firstName";
+            hql = hql.contains("WHERE") ? hql + " AND firstName=:firstName" : hql + " WHERE firstName=:firstName";
         if(userSummaryRequest.getLastName() != null)
-            hql = hql + " lastName=:lastName";
+            hql = hql.contains("WHERE") ? hql + " AND lastName=:lastName" : hql + " WHERE lastName=:lastName";
         if(userSummaryRequest.getRole() != null)
-            hql = hql + " role=:role";
+            hql = hql.contains("WHERE") ? hql + " AND role=:role" : hql + " WHERE role=:role";
+        if(userSummaryRequest.getRole() != null)
+            hql = hql.contains("WHERE") ? hql + " AND role=:role" : hql + " WHERE role=:role";
         Query query = session.createQuery(hql, User.class);
 
         if(userSummaryRequest.getId() != null)
