@@ -7,9 +7,10 @@ import lombok.Setter;
 @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserResponse {
-    public int ID;
+    public int Id;
     public String firstName;
     public String lastName;
     public String email;
     public Role role;
+    public Boolean isDisabled;
 }

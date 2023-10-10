@@ -1,5 +1,6 @@
 package com.food.menu.service;
 
+import com.food.menu.request.UserSummaryRequest;
 import com.food.menu.response.UserResponse;
 import com.food.menu.dao.models.User;
 
@@ -14,4 +15,6 @@ public interface UserService {
     void deleteUser(int userID);
 
     void updateUser(int userID, User user);
+
+    List<UserResponse> getUsersSummary(UserSummaryRequest userSummaryRequest);
 }

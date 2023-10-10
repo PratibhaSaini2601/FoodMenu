@@ -1,8 +1,7 @@
 package com.food.menu.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.food.menu.request.RegisterRequest;
-import com.food.menu.response.AuthenticationResponse;
+import com.food.menu.request.UserSummaryRequest;
 import com.food.menu.response.UserResponse;
 import com.food.menu.dao.models.User;
 import com.food.menu.service.AuthenticationService;
@@ -30,9 +29,9 @@ public class UserController {
         return ResponseEntity.ok(userService.getUserByID(userID));
     }
 
-    @PostMapping("/users")
-    public ResponseEntity<AuthenticationResponse> createUser(@RequestBody RegisterRequest registerRequest) {
-        return ResponseEntity.ok(authenticationService.register(registerRequest));
+    @PostMapping("/users/summary")
+    public ResponseEntity<List<UserResponse>> getUsersSummary(@RequestBody UserSummaryRequest userSummaryRequest) {
+        return ResponseEntity.ok(userService.getUsersSummary(userSummaryRequest));
     }
 
     @PatchMapping("users/{userID}")

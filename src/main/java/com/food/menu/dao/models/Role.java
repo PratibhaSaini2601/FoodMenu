@@ -2,7 +2,7 @@ package com.food.menu.dao.models;
 
 public enum Role {
     ADMIN("ADMIN"),
-    PLAYER("CHEF");
+    CHEF("CHEF");
 
     Role(String role) {
     }
